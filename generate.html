@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>AI ResumeGen</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generate.html">Create Resume</a></li>
+        <li><a href="resume.html">View Resume</a></li>
+        <li><a href="analyser.html">Analysis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Create Your Resume</h2>
+    <form id="resume-form">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="summary" placeholder="Professional Summary"></textarea>
+      <input type="text" id="skills" placeholder="Skills (comma separated)">
+      <textarea id="experience" placeholder="Experience"></textarea>
+
+      <!-- Template Selector -->
+      <h3>Select a Template</h3>
+      <div class="templates">
+        <div id="template-classic" class="template-option" onclick="selectTemplate('classic')">
+          Classic Template
+        </div>
+        <div id="template-modern" class="template-option" onclick="selectTemplate('modern')">
+          Modern Template
+        </div>
+        <div id="template-minimal" class="template-option" onclick="selectTemplate('minimal')">
+          Minimal Template
+        </div>
+      </div>
+
+      <!-- Hidden input to store selected template -->
+      <input type="hidden" id="template" value="classic">
+
+      <button type="submit" class="btn">Generate Resume</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 AI ResumeGen. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ Scripts placed correctly -->
+  <script src="template.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

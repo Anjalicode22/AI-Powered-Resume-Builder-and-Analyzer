@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generated Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body onload="loadResume()">
+  <header>
+    <nav>
+      <h1>AI ResumeGen</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generate.html">Create Resume</a></li>
+        <li><a href="resume.html">Generated Resume</a></li>
+        <li><a href="analyser.html">Analysis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Your Generated Resume</h2>
+
+    <!-- Resume Output -->
+    <div id="resume-output" class="resume"></div>
+
+    <!-- Buttons -->
+    <div class="button-group">
+      <button type="button" onclick="downloadPDF()">Download as PDF</button>
+      <button type="button" onclick="window.location.href='analyser.html'">Analyse Resume</button>
+      <button type="button" onclick="window.location.href='generate.html'">Create New</button>
+    </div>
+  </div>
+
+ <script src="template.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

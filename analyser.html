@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Analyser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>AI ResumeGen</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generate.html">Create Resume</a></li>
+        <li><a href="resume.html">Generated Resume</a></li>
+        <li><a href="analyser.html">Analysis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Resume Analyser</h2>
+
+    <!-- Option 1: Analyse generated resume -->
+    <button type="button" onclick="loadResumeForAnalysis()">Analyse My Generated Resume</button>
+
+    <!-- Option 2: Paste text manually -->
+    <h3>Or Paste Your Resume Text</h3>
+    <textarea id="resumeText" placeholder="Paste your resume content here..."></textarea>
+    <button type="button" onclick="analyseResume()">Analyse Now</button>
+
+    <!-- Analysis Results -->
+    <div id="analysisResult" class="result-box"></div>
+
+    <div class="nav-links">
+      <a href="index.html">⬅ Back to Home</a> |
+      <a href="generate.html">Create New Resume</a>
+    </div>
+  </div>
+
+  <script src="template.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
